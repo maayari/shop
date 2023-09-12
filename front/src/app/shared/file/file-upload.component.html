@@ -1,0 +1,14 @@
+
+<div class="text-center">
+	<input class="label-file" type="file"  	(change)="onChange($event)">		   
+			<button (click)="onUpload()"  class="button-89" >
+				Upload
+			</button>
+</div>
+		
+<!--Flag variable is used here-->
+<div class="container" *ngIf="loading">
+			<h3>Loading ...</h3>
+</div>
+
+
